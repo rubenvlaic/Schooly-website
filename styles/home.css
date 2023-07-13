@@ -1,0 +1,84 @@
+/* css for home page */
+#intro {
+  background-color: var(--bg-primary);
+}
+
+.courses-calendar-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.course-calendar {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+
+  flex: 0 1 calc(33.33% - 20px);
+}
+
+.course-calendar .ending {
+  height: 4px;
+  width: 100%;
+  background-color: var(--button-color);
+}
+
+.details {
+  display: flex;
+  gap: 10px;
+}
+
+.details .info {
+  display: flex;
+  align-items: center;
+}
+
+.place {
+  background-color: var(--text-secondary);
+  padding: 8px;
+  border-radius: 50px;
+}
+
+@media (max-width: 992px) {
+  .course-calendar {
+    flex: 0 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .course-calendar {
+    flex: 0 1 100%;
+  }
+}
+
+#what-is {
+  background-color: var(--bg-secondary);
+}
+
+.partners-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 50px;
+}
+
+.partner {
+  flex: 0 1 100px;
+  height: auto;
+
+  margin-right: var(--spacing-xl);
+  margin-left: var(--spacing-xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.partner img {
+  filter: grayscale(100%);
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.partner img:hover {
+  filter: grayscale(0);
+}
